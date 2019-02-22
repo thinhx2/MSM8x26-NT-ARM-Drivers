@@ -133,10 +133,12 @@ HKLM,%ScreenProps%,DisplayPhysicalWidth,0x00010001,0x000002D0
 HKLM,%ScreenProps%,TouchPillarBoxWidthRight,0x00010001,0x00000000
 HKLM,%ScreenProps%,DisplayWidth10um,0x00010001,0x000015AE
 HKLM,%ScreenProps%,DisplayHeight10um,0x00010001,0x000026AC
+HKLM,%ScreenProps%,DisplayViewableHeight,0x00010001,0x00001000
+HKLM,%ScreenProps%,DisplayViewableWidth,0x00010001,0x00000f78
 
 [DisplaySize.NT.HW.AddReg]
-HKLM,%DisplaySize%, "DisplayHeight10um", %REG_DWORD%, 0x00001000
-HKLM,%DisplaySize%, "DisplayWidth10um",  %REG_DWORD%, 0x00000F78
+HKLM,%DisplaySize%, "DisplayHeight10um", %REG_DWORD%, 0x000026AC
+HKLM,%DisplaySize%, "DisplayWidth10um",  %REG_DWORD%, 0x000015AE
 
 ;-------------- Service installation
 [TchDriver_Device.NT.Services]
