@@ -1,0 +1,116 @@
+;
+; camcalibration.inf
+;
+[Version]
+Signature   = "$WINDOWS NT$"
+Class       = SYSTEM
+ClassGuid   = {4d36e97d-e325-11ce-bfc1-08002be10318}
+Provider    = %IHV%
+DriverVer   = 09/09/2016,12.0.30519.0
+CatalogFile = camcalibration.cat
+
+[DestinationDirs]
+; 11 = system32
+CamCal.Files.NTarm_11 = 12
+
+[SourceDisksNames]
+0 = %DiskId1%
+
+[SourceDisksFiles]
+01029801.dcc = 0,,
+01029802.dcc = 0,,
+01029803.dcc = 0,,
+0103BB00.dcc = 0,,
+0103BB01.dcc = 0,,
+01066401.dcc = 0,,
+01066402.dcc = 0,,
+0107A300.dcc = 0,,
+0107A301.dcc = 0,,
+0107A302.dcc = 0,,
+0107A303.dcc = 0,,
+05000400.dfc = 0,,
+0A08A102.dcc = 0,,
+0A08A103.dcc = 0,,
+0A08A104.dcc = 0,,
+0A08A105.dcc = 0,,
+0A214000.dcc = 0,,
+0A214001.dcc = 0,,
+0C563A01.dcc = 0,,
+0C563A02.dcc = 0,,
+0C563A03.dcc = 0,,
+0F005601.dcc = 0,,
+0F005602.dcc = 0,,
+0F005603.dcc = 0,,
+0F005604.dcc = 0,,
+0F005605.dcc = 0,,
+0F005606.dcc = 0,,
+0F005607.dcc = 0,,
+0FF00F01.dcc = 0,,
+10464101.dcc = 0,,
+10464102.dcc = 0,,
+10464103.dcc = 0,,
+10464104.dcc = 0,,
+10464105.dcc = 0,,
+10464106.dcc = 0,,
+10504101.dcc = 0,,
+10504102.dcc = 0,,
+11AD1701.dcc = 0,,
+11AD1702.dcc = 0,,
+11AD1703.dcc = 0,,
+11AD1704.dcc = 0,,
+
+;*****************************************
+; CamCal  Install Section
+;*****************************************
+
+[DefaultInstall.NTARM]
+CopyFiles = CamCal.Files.NTarm_11
+
+; System32
+[CamCal.Files.NTarm_11]
+01029801.dcc
+01029802.dcc
+01029803.dcc
+0103BB00.dcc
+0103BB01.dcc
+01066401.dcc
+01066402.dcc
+0107A300.dcc
+0107A301.dcc
+0107A302.dcc
+0107A303.dcc
+05000400.dfc
+0A08A102.dcc
+0A08A103.dcc
+0A08A104.dcc
+0A08A105.dcc
+0A214000.dcc
+0A214001.dcc
+0C563A01.dcc
+0C563A02.dcc
+0C563A03.dcc
+0F005601.dcc
+0F005602.dcc
+0F005603.dcc
+0F005604.dcc
+0F005605.dcc
+0F005606.dcc
+0F005607.dcc
+0FF00F01.dcc
+10464101.dcc
+10464102.dcc
+10464103.dcc
+10464104.dcc
+10464105.dcc
+10464106.dcc
+10504101.dcc
+10504102.dcc
+11AD1701.dcc
+11AD1702.dcc
+11AD1703.dcc
+11AD1704.dcc
+
+[Strings]
+IHV                    = "LumiaWoA authors"
+DiskId1                = "Camera Calibration Installation Disk #1"
+
