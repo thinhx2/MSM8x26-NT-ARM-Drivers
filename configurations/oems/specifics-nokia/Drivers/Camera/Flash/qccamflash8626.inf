@@ -14,7 +14,7 @@ Signature   = "$WINDOWS NT$"
 Class       = SYSTEM
 ClassGuid   = {4D36E97D-E325-11CE-BFC1-08002BE10318}
 Provider    = %QC%
-DriverVer   = 12/15/2014,21.30.22.0317
+DriverVer   = 04/17/2015,22.48.28.0043
 CatalogFile = qccamflash8626.cat
 PnpLockDown = 1
 
