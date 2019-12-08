@@ -12,15 +12,15 @@ CatalogFile = license.cat
 
 [DestinationDirs]
 ; 11 = System32
-Oobe.Files    = 11,Oobe\Info
+Oobe.Files = 11,Oobe\Info
 
 [SourceDisksNames]
 0 = %DiskId1%
 
 [SourceDisksFiles]
-Oobe.xml                           = 0,,
-license.html                       = 0,,
-license.rtf                        = 0,,
+Oobe.xml     = 0,,
+license.html = 0,,
+license.rtf  = 0,,
 
 
 ;*****************************************
@@ -36,6 +36,7 @@ license.rtf
 license.html
 
 [Strings]
-IHV                    = "LumiaWoA authors"
-DiskId1                = "License Installation Disk #1"
+IHV     = "LumiaWoA authors"
+DiskId1 = "License Installation Disk #1"
+
 

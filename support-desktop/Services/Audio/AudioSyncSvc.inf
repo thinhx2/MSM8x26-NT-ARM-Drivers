@@ -41,16 +41,17 @@ ErrorControl  = 1
 ServiceBinary = "%%SystemRoot%%\System32\AudioSyncSvc.exe"
 
 [AudioSyncSvc_Reg]
-HKLM, "SYSTEM\ControlSet001\Services\AudioSyncSvc", "Start", 0x10001, 0x2
-HKLM, "SYSTEM\ControlSet001\Services\AudioSyncSvc", "Type", 0x10001, 0x10
-HKLM, "SYSTEM\ControlSet001\Services\AudioSyncSvc", "ErrorControl", 0x10001, 0x1
-HKLM, "SYSTEM\ControlSet001\Services\AudioSyncSvc", "DisplayName", 0x0, "Audio Syncing Service"
-HKLM, "SYSTEM\ControlSet001\Services\AudioSyncSvc", "Description", 0x0, "Audio Syncing Service"
-HKLM, "SYSTEM\ControlSet001\Services\AudioSyncSvc", "ImagePath", 0x20000, "%%SystemRoot%%\System32\AudioSyncSvc.exe"
+HKLM, "SYSTEM\ControlSet001\Services\AudioSyncSvc", "Start"       , 0x10001,  0x2
+HKLM, "SYSTEM\ControlSet001\Services\AudioSyncSvc", "Type"        , 0x10001,  0x10
+HKLM, "SYSTEM\ControlSet001\Services\AudioSyncSvc", "ErrorControl", 0x10001,  0x1
+HKLM, "SYSTEM\ControlSet001\Services\AudioSyncSvc", "DisplayName" , 0x0    ,  "Audio Syncing Service"
+HKLM, "SYSTEM\ControlSet001\Services\AudioSyncSvc", "Description" , 0x0    ,  "Audio Syncing Service"
+HKLM, "SYSTEM\ControlSet001\Services\AudioSyncSvc", "ImagePath"   , 0x20000,  "%%SystemRoot%%\System32\AudioSyncSvc.exe"
 
 [AudioSyncSvc.Files]
 AudioSyncSvc.exe
 
 [Strings]
 IHV = "LumiaWoA authors"
+
 

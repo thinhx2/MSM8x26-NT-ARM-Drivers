@@ -20,8 +20,8 @@ ModemResourcesWA.Files = 10,OEM\Drivers\WA
 qcmbb8626.wa.cat_ = 0,,
 qcmbb8626.wp.cat_ = 0,,
 qcmbb.wp8626.inf_ = 0,,
-qcmbb8626.wa.sys = 0,,
-qcmbb8626.wp.sys = 0,,
+qcmbb8626.wa.sys  = 0,,
+qcmbb8626.wp.sys  = 0,,
 
 [DefaultInstall.NTARM]
 CopyFiles = ModemResourcesWP.Files,ModemResourcesWA.Files
@@ -29,12 +29,13 @@ CopyFiles = ModemResourcesWP.Files,ModemResourcesWA.Files
 [ModemResourcesWP.Files]
 qcmbb8626.cat, qcmbb8626.wp.cat_, , 0x00004000,
 qcmbb.wp8626.inf, qcmbb.wp8626.inf_, , 0x00004000,
-qcmbb8626.sys, qcmbb8626.wp.sys, , 0x00004000,
+qcmbb8626.sys, qcmbb8626.wp.sys , , 0x00004000,
 
 [ModemResourcesWA.Files]
 qcmbb8626.cat, qcmbb8626.wa.cat_, , 0x00004000,
 qcmbb.wp8626.inf, qcmbb.wp8626.inf_, , 0x00004000,
-qcmbb8626.sys, qcmbb8626.wa.sys, , 0x00004000,
+qcmbb8626.sys, qcmbb8626.wa.sys , , 0x00004000,
 
 [Strings]
 IHV = "LumiaWoA authors"
+

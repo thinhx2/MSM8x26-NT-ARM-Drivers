@@ -41,19 +41,19 @@ ErrorControl  = 1
 ServiceBinary = "%%SystemRoot%%\System32\AutoBrightnessSvc.exe"
 
 [AutoBrightnessSvc_Reg]
-HKLM, "SYSTEM\ControlSet001\Services\AutoBrightnessSvc", "Start", 0x10001, 0x2
-HKLM, "SYSTEM\ControlSet001\Services\AutoBrightnessSvc", "Type", 0x10001, 0x10
-HKLM, "SYSTEM\ControlSet001\Services\AutoBrightnessSvc", "ErrorControl", 0x10001, 0x1
-HKLM, "SYSTEM\ControlSet001\Services\AutoBrightnessSvc", "DisplayName", 0x0, "Display automatic brightness service"
-HKLM, "SYSTEM\ControlSet001\Services\AutoBrightnessSvc", "Description", 0x0, "Manages the display brightness based on the ambient light sensor readings."
-HKLM, "SYSTEM\ControlSet001\Services\AutoBrightnessSvc", "ImagePath", 0x20000, "%%SystemRoot%%\System32\AutoBrightnessSvc.exe"
-HKLM, "SYSTEM\ControlSet001\Services\AutoBrightnessSvc", "ObjectName", 0x0,"NT AUTHORITY\LocalService"
+HKLM, "SYSTEM\ControlSet001\Services\AutoBrightnessSvc", "Start"       , 0x10001,  0x2
+HKLM, "SYSTEM\ControlSet001\Services\AutoBrightnessSvc", "Type"        , 0x10001,  0x10
+HKLM, "SYSTEM\ControlSet001\Services\AutoBrightnessSvc", "ErrorControl", 0x10001,  0x1
+HKLM, "SYSTEM\ControlSet001\Services\AutoBrightnessSvc", "DisplayName" , 0x0    ,  "Display automatic brightness service"
+HKLM, "SYSTEM\ControlSet001\Services\AutoBrightnessSvc", "Description" , 0x0    ,  "Manages the display brightness based on the ambient light sensor readings."
+HKLM, "SYSTEM\ControlSet001\Services\AutoBrightnessSvc", "ImagePath"   , 0x20000,  "%%SystemRoot%%\System32\AutoBrightnessSvc.exe"
+HKLM, "SYSTEM\ControlSet001\Services\AutoBrightnessSvc", "ObjectName"  , 0x0    , "NT AUTHORITY\LocalService"
 
 [AutoBrightnessSvc.Files]
 AutoBrightnessSvc.exe
 
 [Enhancement.Reg]
-HKLM, "SYSTEM\CurrentControlSet\Services\DisplayEnhancementService\State\CMO00110_09_07D9_98", ,0x10
+HKLM, "SYSTEM\CurrentControlSet\Services\DisplayEnhancementService\State\CMO00110_09_07D9_98", , 0x10,
 
 [Enhancement.Reg.Security]
 "D:P(A;;GA;;;SY)(A;;GA;;;BA)(A;;GA;;;AU)(A;;GA;;;BG)(A;;GA;;;S-1-15-2-1)(A;;GA;;;WD)"
@@ -66,4 +66,5 @@ REG_MULTI_SZ  = 0x00010000
 REG_EXPAND_SZ = 0x00020000
 REG_DWORD     = 0x00010001
 REG_BINARY    = 0x00000001
+
 

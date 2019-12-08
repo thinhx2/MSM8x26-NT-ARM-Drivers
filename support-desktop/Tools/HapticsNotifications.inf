@@ -26,12 +26,12 @@ AddReg    = HapticsNotifications_Reg,Settings_Reg
 HapticsNotifications.exe
 
 [HapticsNotifications_Reg]
-HKLM, "SOFTWARE\Microsoft\Windows\CurrentVersion\Run", "HapticsNotifications", %REG_EXPAND_SZ%, "%%windir%%\system32\HapticsNotifications.exe"
+HKLM, "SOFTWARE\Microsoft\Windows\CurrentVersion\Run", "HapticsNotifications", %REG_EXPAND_SZ%,  "%%windir%%\system32\HapticsNotifications.exe"
 
 [Settings_Reg]
-HKLM, "SOFTWARE\OEM\Vibra",                            "Duration",             %REG_DWORD%,     0x5
-HKLM, "SOFTWARE\OEM\Vibra",                            "Intensity",            %REG_DWORD%,     0x50
-HKLM, "SOFTWARE\OEM\Vibra",                            "Enabled",              %REG_DWORD%,     0x1
+HKLM, "SOFTWARE\OEM\Vibra", "Duration" , %REG_DWORD%,      0x5
+HKLM, "SOFTWARE\OEM\Vibra", "Intensity", %REG_DWORD%,      0x50
+HKLM, "SOFTWARE\OEM\Vibra", "Enabled"  , %REG_DWORD%,      0x1
 
 [Settings_Reg.Security]
 "D:P(A;;GA;;;SY)(A;;GA;;;BA)(A;;GA;;;AU)(A;;GA;;;BG)(A;;GA;;;S-1-15-2-1)(A;;GA;;;WD)"
@@ -44,4 +44,5 @@ REG_MULTI_SZ  = 0x00010000
 REG_EXPAND_SZ = 0x00020000
 REG_DWORD     = 0x00010001
 REG_BINARY    = 0x00000001
+
 

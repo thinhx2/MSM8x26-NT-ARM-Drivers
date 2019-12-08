@@ -15,11 +15,12 @@ CatalogFile = phonereleaseversion.cat
 ;*****************************************
 
 [DefaultInstall.NTARM]
-Addreg    = phonereleaseversionReg
+Addreg = phonereleaseversionReg
 
 [phonereleaseversionReg]
-HKLM, "SYSTEM\Platform\DeviceTargetingInfo", "PhoneReleaseVersion", 0x0,  "1911"
+HKLM, "SYSTEM\Platform\DeviceTargetingInfo", "PhoneReleaseVersion", 0x0,   "1911"
 
 [Strings]
-IHV                    = "LumiaWoA authors"
+IHV = "LumiaWoA authors"
+
 

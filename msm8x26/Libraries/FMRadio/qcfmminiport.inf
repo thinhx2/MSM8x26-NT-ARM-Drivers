@@ -23,16 +23,16 @@ CopyFiles = qcfmminiport.Files
 AddReg    = qcfmminiport_Reg
 
 [qcfmminiport_Reg]
-HKLM, "SYSTEM\ControlSet001\Control\Tuner\Audio\FmRadio", "MiniportDll", 0x0, "qcfmminiport.dll"
-HKLM, "SYSTEM\ControlSet001\Control\Tuner\Audio\FmRadio", "newSearchAlgorithm", 0x10001, 0x0
-HKLM, "SYSTEM\ControlSet001\Control\Tuner\Audio\FmRadio", "NoOfSiNRSamples", 0x10001, 0xA
-HKLM, "SYSTEM\ControlSet001\Control\Tuner\Audio\FmRadio", "IntDetTHLow", 0x10001, 0x6D
-HKLM, "SYSTEM\ControlSet001\Control\Tuner\Audio\FmRadio", "IntDetTHHigh", 0x10001, 0x73
-HKLM, "SYSTEM\ControlSet001\Control\Tuner\Audio\FmRadio", "SiNRTH", 0x10001, 0x3
-HKLM, "SYSTEM\ControlSet001\Control\Tuner\Audio\FmRadio", "CFOTH12", 0x10001, 0x3A98
-HKLM, "SYSTEM\ControlSet001\Control\Tuner\Audio\FmRadio", "RMSSIFirstStage", 0x10001, 0xFFFFFF90
-HKLM, "SYSTEM\ControlSet001\Control\Tuner\Audio\FmRadio", "SiNRFirstStage", 0x10001, 0x0
-HKLM, "SYSTEM\ControlSet001\Control\Tuner\Audio\FmRadio", "SiNRFinalStage", 0x10001, 0x3
+HKLM, "SYSTEM\ControlSet001\Control\Tuner\Audio\FmRadio", "MiniportDll"       , 0x0    ,  "qcfmminiport.dll"
+HKLM, "SYSTEM\ControlSet001\Control\Tuner\Audio\FmRadio", "newSearchAlgorithm", 0x10001,  0x0
+HKLM, "SYSTEM\ControlSet001\Control\Tuner\Audio\FmRadio", "NoOfSiNRSamples"   , 0x10001,  0xA
+HKLM, "SYSTEM\ControlSet001\Control\Tuner\Audio\FmRadio", "IntDetTHLow"       , 0x10001,  0x6D
+HKLM, "SYSTEM\ControlSet001\Control\Tuner\Audio\FmRadio", "IntDetTHHigh"      , 0x10001,  0x73
+HKLM, "SYSTEM\ControlSet001\Control\Tuner\Audio\FmRadio", "SiNRTH"            , 0x10001,  0x3
+HKLM, "SYSTEM\ControlSet001\Control\Tuner\Audio\FmRadio", "CFOTH12"           , 0x10001,  0x3A98
+HKLM, "SYSTEM\ControlSet001\Control\Tuner\Audio\FmRadio", "RMSSIFirstStage"   , 0x10001,  0xFFFFFF90
+HKLM, "SYSTEM\ControlSet001\Control\Tuner\Audio\FmRadio", "SiNRFirstStage"    , 0x10001,  0x0
+HKLM, "SYSTEM\ControlSet001\Control\Tuner\Audio\FmRadio", "SiNRFinalStage"    , 0x10001,  0x3
 
 [qcfmminiport.Files]
 qcfmminiport.dll
@@ -45,4 +45,5 @@ REG_MULTI_SZ  = 0x00010000
 REG_EXPAND_SZ = 0x00020000
 REG_DWORD     = 0x00010001
 REG_BINARY    = 0x00000001
+
 

@@ -11,14 +11,14 @@ CatalogFile = PowerSupplyNotifier.cat
 
 [DestinationDirs]
 PowerSupplyNotifier.Files = 11 ; \system32 directory on Windows 2000 and later versions
-Media.Files = 10, Media
+Media.Files               = 10, Media
 
 [SourceDisksNames]
 0 = "Disk"
 
 [SourceDisksFiles]
 PowerSupplyNotifier.exe = 0,,
-Alert_charging.wma = 0,,
+Alert_charging.wma      = 0,,
 
 [DefaultInstall.NTARM]
 CopyFiles = PowerSupplyNotifier.Files,Media.Files
@@ -43,12 +43,12 @@ ErrorControl  = 1
 ServiceBinary = "%%SystemRoot%%\System32\PowerSupplyNotifier.exe"
 
 [PowerSupplyNotifier_Reg]
-HKLM, "SYSTEM\ControlSet001\Services\PowerSupplyNotifier", "Start", 0x10001, 0x2
-HKLM, "SYSTEM\ControlSet001\Services\PowerSupplyNotifier", "Type", 0x10001, 0x10
-HKLM, "SYSTEM\ControlSet001\Services\PowerSupplyNotifier", "ErrorControl", 0x10001, 0x1
-HKLM, "SYSTEM\ControlSet001\Services\PowerSupplyNotifier", "DisplayName", 0x0, "Power Supply Notifier"
-HKLM, "SYSTEM\ControlSet001\Services\PowerSupplyNotifier", "Description", 0x0, "Power Supply Notifier"
-HKLM, "SYSTEM\ControlSet001\Services\PowerSupplyNotifier", "ImagePath", 0x20000, "%%SystemRoot%%\System32\PowerSupplyNotifier.exe"
+HKLM, "SYSTEM\ControlSet001\Services\PowerSupplyNotifier", "Start"       , 0x10001,  0x2
+HKLM, "SYSTEM\ControlSet001\Services\PowerSupplyNotifier", "Type"        , 0x10001,  0x10
+HKLM, "SYSTEM\ControlSet001\Services\PowerSupplyNotifier", "ErrorControl", 0x10001,  0x1
+HKLM, "SYSTEM\ControlSet001\Services\PowerSupplyNotifier", "DisplayName" , 0x0    ,  "Power Supply Notifier"
+HKLM, "SYSTEM\ControlSet001\Services\PowerSupplyNotifier", "Description" , 0x0    ,  "Power Supply Notifier"
+HKLM, "SYSTEM\ControlSet001\Services\PowerSupplyNotifier", "ImagePath"   , 0x20000,  "%%SystemRoot%%\System32\PowerSupplyNotifier.exe"
 
 [PowerSupplyNotifier.Files]
 PowerSupplyNotifier.exe
@@ -58,4 +58,5 @@ Alert_charging.wma
 
 [Strings]
 IHV = "LumiaWoA authors"
+
 

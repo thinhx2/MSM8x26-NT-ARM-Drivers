@@ -18,7 +18,7 @@ NullResources.Files = 10,OEM\Drivers
 [SourceDisksFiles]
 qcmbbnull.cat_ = 0,,
 qcmbbnull.inf_ = 0,,
-qcmbbnull.sys = 0,,
+qcmbbnull.sys  = 0,,
 
 [DefaultInstall.NTARM]
 CopyFiles = NullResources.Files
@@ -30,4 +30,5 @@ qcmbbnull.sys
 
 [Strings]
 IHV = "LumiaWoA authors"
+
 

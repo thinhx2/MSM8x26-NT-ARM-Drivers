@@ -41,16 +41,17 @@ ErrorControl  = 1
 ServiceBinary = "%%SystemRoot%%\System32\DataManagementSvc.exe"
 
 [DataManagementSvc_Reg]
-HKLM, "SYSTEM\ControlSet001\Services\DataManagementSvc", "Start", 0x10001, 0x2
-HKLM, "SYSTEM\ControlSet001\Services\DataManagementSvc", "Type", 0x10001, 0x10
-HKLM, "SYSTEM\ControlSet001\Services\DataManagementSvc", "ErrorControl", 0x10001, 0x1
-HKLM, "SYSTEM\ControlSet001\Services\DataManagementSvc", "DisplayName", 0x0, "Data Management Service"
-HKLM, "SYSTEM\ControlSet001\Services\DataManagementSvc", "Description", 0x0, "Enables data connection on multi sim devices"
-HKLM, "SYSTEM\ControlSet001\Services\DataManagementSvc", "ImagePath", 0x20000, "%%SystemRoot%%\System32\DataManagementSvc.exe"
+HKLM, "SYSTEM\ControlSet001\Services\DataManagementSvc", "Start"       , 0x10001,  0x2
+HKLM, "SYSTEM\ControlSet001\Services\DataManagementSvc", "Type"        , 0x10001,  0x10
+HKLM, "SYSTEM\ControlSet001\Services\DataManagementSvc", "ErrorControl", 0x10001,  0x1
+HKLM, "SYSTEM\ControlSet001\Services\DataManagementSvc", "DisplayName" , 0x0    ,  "Data Management Service"
+HKLM, "SYSTEM\ControlSet001\Services\DataManagementSvc", "Description" , 0x0    ,  "Enables data connection on multi sim devices"
+HKLM, "SYSTEM\ControlSet001\Services\DataManagementSvc", "ImagePath"   , 0x20000,  "%%SystemRoot%%\System32\DataManagementSvc.exe"
 
 [DataManagementSvc.Files]
 DataManagementSvc.exe
 
 [Strings]
 IHV = "LumiaWoA authors"
+
 

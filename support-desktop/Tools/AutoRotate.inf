@@ -30,8 +30,8 @@ AddReg    = AutoRotate_Reg
 AutoRotate.exe
 
 [AutoRotate_Reg]
-HKLM, "SOFTWARE\Microsoft\Windows\CurrentVersion\Run", "AutoRotate", %REG_EXPAND_SZ%, "%%windir%%\system32\AutoRotate.exe"
-HKLM, "SOFTWARE\Microsoft\Windows\CurrentVersion\AutoRotation", "SensorPresent", %REG_DWORD%, 0x1
+HKLM, "SOFTWARE\Microsoft\Windows\CurrentVersion\Run"         , "AutoRotate"   , %REG_EXPAND_SZ%,  "%%windir%%\system32\AutoRotate.exe"
+HKLM, "SOFTWARE\Microsoft\Windows\CurrentVersion\AutoRotation", "SensorPresent", %REG_DWORD%    ,  0x1
 
 [Strings]
 IHV           = "LumiaWoA authors"
@@ -41,4 +41,5 @@ REG_MULTI_SZ  = 0x00010000
 REG_EXPAND_SZ = 0x00020000
 REG_DWORD     = 0x00010001
 REG_BINARY    = 0x00000001
+
 

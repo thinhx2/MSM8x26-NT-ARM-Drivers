@@ -41,18 +41,18 @@ ErrorControl  = 0
 ServiceBinary = "%%SystemRoot%%\System32\svchost.exe -k IMSQMIsvcGroup"
 
 [qcImsQMIDaemon8626_Reg]
-HKLM, "SYSTEM\controlset001\services\IMSQMIsvc", "PreshutdownTimeout", 0x10001, 0x4E20
-HKLM, "SYSTEM\controlset001\services\IMSQMIsvc", "Start", 0x10001, 0x2
-HKLM, "SYSTEM\controlset001\services\IMSQMIsvc", "Type", 0x10001, 0x20
-HKLM, "SYSTEM\controlset001\services\IMSQMIsvc", "ErrorControl", 0x10001, 0x0
-HKLM, "SYSTEM\controlset001\services\IMSQMIsvc", "DisplayName", 0x0, "IMSQMIsvc"
-HKLM, "SYSTEM\controlset001\services\IMSQMIsvc", "Description", 0x0, "QC QMI Daemon Service"
-HKLM, "SYSTEM\controlset001\services\IMSQMIsvc", "FailureActions", 0x1, 80,51,01,00,00,00,00,00,00,00,00,00,04,00,00,00,14,00,00,00,01,00,00,00,10,27,00,00,01,00,00,00,10,27,00,00,01,00,00,00,10,27,00,00,00,00,00,00,10,27,00,00
-HKLM, "SYSTEM\controlset001\services\IMSQMIsvc", "ImagePath", 0x20000, "%%SystemRoot%%\System32\svchost.exe -k IMSQMIsvcGroup"
-HKLM, "SYSTEM\controlset001\services\IMSQMIsvc\Parameters", "ServiceDll", 0x20000, "%%SystemRoot%%\System32\qcImsQMIDaemon8626.dll"
-HKLM, "SYSTEM\controlset001\services\IMSQMIsvc\Parameters", "ServiceMain", 0x0, "ServiceMain"
-HKLM, "SYSTEM\controlset001\services\IMSQMIsvc\Parameters", "ServiceDllUnloadOnStop", 0x10001, 0x1
-HKLM, "Software\Microsoft\Windows NT\CurrentVersion\Svchost", IMSQMIsvcGroup, %REG_MULTI_SZ%, "IMSQMIsvc"
+HKLM, "SYSTEM\controlset001\services\IMSQMIsvc"             , "PreshutdownTimeout"    , 0x10001       ,  0x4E20
+HKLM, "SYSTEM\controlset001\services\IMSQMIsvc"             , "Start"                 , 0x10001       ,  0x2
+HKLM, "SYSTEM\controlset001\services\IMSQMIsvc"             , "Type"                  , 0x10001       ,  0x20
+HKLM, "SYSTEM\controlset001\services\IMSQMIsvc"             , "ErrorControl"          , 0x10001       ,  0x0
+HKLM, "SYSTEM\controlset001\services\IMSQMIsvc"             , "DisplayName"           , 0x0           ,  "IMSQMIsvc"
+HKLM, "SYSTEM\controlset001\services\IMSQMIsvc"             , "Description"           , 0x0           ,  "QC QMI Daemon Service"
+HKLM, "SYSTEM\controlset001\services\IMSQMIsvc"             , "FailureActions"        , 0x1           ,  80,51,01,00,00,00,00,00,00,00,00,00,04,00,00,00,14,00,00,00,01,00,00,00,10,27,00,00,01,00,00,00,10,27,00,00,01,00,00,00,10,27,00,00,00,00,00,00,10,27,00,00
+HKLM, "SYSTEM\controlset001\services\IMSQMIsvc"             , "ImagePath"             , 0x20000       ,  "%%SystemRoot%%\System32\svchost.exe -k IMSQMIsvcGroup"
+HKLM, "SYSTEM\controlset001\services\IMSQMIsvc\Parameters"  , "ServiceDll"            , 0x20000       ,  "%%SystemRoot%%\System32\qcImsQMIDaemon8626.dll"
+HKLM, "SYSTEM\controlset001\services\IMSQMIsvc\Parameters"  , "ServiceMain"           , 0x0           ,  "ServiceMain"
+HKLM, "SYSTEM\controlset001\services\IMSQMIsvc\Parameters"  , "ServiceDllUnloadOnStop", 0x10001       ,  0x1
+HKLM, "Software\Microsoft\Windows NT\CurrentVersion\Svchost", IMSQMIsvcGroup          , %REG_MULTI_SZ%,  "IMSQMIsvc"
 
 [qcImsQMIDaemon8626.Files]
 qcImsQMIDaemon8626.dll
@@ -65,4 +65,5 @@ REG_MULTI_SZ  = 0x00010000
 REG_EXPAND_SZ = 0x00020000
 REG_DWORD     = 0x00010001
 REG_BINARY    = 0x00000001
+
 

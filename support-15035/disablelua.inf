@@ -15,11 +15,12 @@ CatalogFile = disablelua.cat
 ;*****************************************
 
 [DefaultInstall.NTARM]
-Addreg    = disableluaReg
+Addreg = disableluaReg
 
 [disableluaReg]
-HKLM, "SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System", "EnableLUA", 0x10001, 0x0
+HKLM, "SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System", "EnableLUA", 0x10001,  0x0
 
 [Strings]
-IHV                    = "LumiaWoA authors"
+IHV = "LumiaWoA authors"
+
 

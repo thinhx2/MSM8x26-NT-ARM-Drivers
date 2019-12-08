@@ -41,18 +41,18 @@ ErrorControl  = 0
 ServiceBinary = "%%SystemRoot%%\System32\svchost.exe -k IMSDATAsvcGroup"
 
 [qcImsDataDaemon8626_Reg]
-HKLM, "SYSTEM\controlset001\services\IMSDATAsvc", "PreshutdownTimeout", 0x10001, 0x4E20
-HKLM, "SYSTEM\controlset001\services\IMSDATAsvc", "Start", 0x10001, 0x2
-HKLM, "SYSTEM\controlset001\services\IMSDATAsvc", "Type", 0x10001, 0x20
-HKLM, "SYSTEM\controlset001\services\IMSDATAsvc", "ErrorControl", 0x10001, 0x0
-HKLM, "SYSTEM\controlset001\services\IMSDATAsvc", "DisplayName", 0x0, "IMSDATAsvc"
-HKLM, "SYSTEM\controlset001\services\IMSDATAsvc", "Description", 0x0, "QC Data Daemon Service"
-HKLM, "SYSTEM\controlset001\services\IMSDATAsvc", "FailureActions", 0x1, 80,51,01,00,00,00,00,00,00,00,00,00,04,00,00,00,14,00,00,00,01,00,00,00,10,27,00,00,01,00,00,00,10,27,00,00,01,00,00,00,10,27,00,00,00,00,00,00,10,27,00,00
-HKLM, "SYSTEM\controlset001\services\IMSDATAsvc", "ImagePath", 0x20000, "%%SystemRoot%%\System32\svchost.exe -k IMSDATAsvcGroup"
-HKLM, "SYSTEM\controlset001\services\IMSDATAsvc\Parameters", "ServiceDll", 0x20000, "%%SystemRoot%%\System32\qcImsDataDaemon8626.dll"
-HKLM, "SYSTEM\controlset001\services\IMSDATAsvc\Parameters", "ServiceMain", 0x0, "ServiceMain"
-HKLM, "SYSTEM\controlset001\services\IMSDATAsvc\Parameters", "ServiceDllUnloadOnStop", 0x10001, 0x1
-HKLM, "Software\Microsoft\Windows NT\CurrentVersion\Svchost", IMSDATAsvcGroup, %REG_MULTI_SZ%, "IMSDATAsvc"
+HKLM, "SYSTEM\controlset001\services\IMSDATAsvc"            , "PreshutdownTimeout"    , 0x10001       ,  0x4E20
+HKLM, "SYSTEM\controlset001\services\IMSDATAsvc"            , "Start"                 , 0x10001       ,  0x2
+HKLM, "SYSTEM\controlset001\services\IMSDATAsvc"            , "Type"                  , 0x10001       ,  0x20
+HKLM, "SYSTEM\controlset001\services\IMSDATAsvc"            , "ErrorControl"          , 0x10001       ,  0x0
+HKLM, "SYSTEM\controlset001\services\IMSDATAsvc"            , "DisplayName"           , 0x0           ,  "IMSDATAsvc"
+HKLM, "SYSTEM\controlset001\services\IMSDATAsvc"            , "Description"           , 0x0           ,  "QC Data Daemon Service"
+HKLM, "SYSTEM\controlset001\services\IMSDATAsvc"            , "FailureActions"        , 0x1           ,  80,51,01,00,00,00,00,00,00,00,00,00,04,00,00,00,14,00,00,00,01,00,00,00,10,27,00,00,01,00,00,00,10,27,00,00,01,00,00,00,10,27,00,00,00,00,00,00,10,27,00,00
+HKLM, "SYSTEM\controlset001\services\IMSDATAsvc"            , "ImagePath"             , 0x20000       ,  "%%SystemRoot%%\System32\svchost.exe -k IMSDATAsvcGroup"
+HKLM, "SYSTEM\controlset001\services\IMSDATAsvc\Parameters" , "ServiceDll"            , 0x20000       ,  "%%SystemRoot%%\System32\qcImsDataDaemon8626.dll"
+HKLM, "SYSTEM\controlset001\services\IMSDATAsvc\Parameters" , "ServiceMain"           , 0x0           ,  "ServiceMain"
+HKLM, "SYSTEM\controlset001\services\IMSDATAsvc\Parameters" , "ServiceDllUnloadOnStop", 0x10001       ,  0x1
+HKLM, "Software\Microsoft\Windows NT\CurrentVersion\Svchost", IMSDATAsvcGroup         , %REG_MULTI_SZ%,  "IMSDATAsvc"
 
 [qcImsDataDaemon8626.Files]
 qcImsDataDaemon8626.dll
@@ -65,4 +65,5 @@ REG_MULTI_SZ  = 0x00010000
 REG_EXPAND_SZ = 0x00020000
 REG_DWORD     = 0x00010001
 REG_BINARY    = 0x00000001
+
 

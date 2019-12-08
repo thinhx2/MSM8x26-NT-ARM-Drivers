@@ -15,11 +15,12 @@ CatalogFile = phonent.cat
 ;*****************************************
 
 [DefaultInstall.NTARM]
-Addreg    = phonentReg
+Addreg = phonentReg
 
 [phonentReg]
-HKLM, "SYSTEM\ControlSet001\Control\ProductOptions", "AnotherSuite", 0x00010000,  "PhoneNT"
+HKLM, "SYSTEM\ControlSet001\Control\ProductOptions", "AnotherSuite", 0x00010000,   "PhoneNT"
 
 [Strings]
-IHV                    = "LumiaWoA authors"
+IHV = "LumiaWoA authors"
+
 

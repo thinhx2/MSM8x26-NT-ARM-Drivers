@@ -48,10 +48,11 @@ KmdfService = qcmbbnull, qcmbbnull_wdfsect
 KmdfLibraryVersion = 1.15
 
 [Strings]
-SPSVCINST_ASSOCSERVICE    = 0x00000002
-ManufacturerName          = "LumiaWoA authors"
-DiskName                  = "Qualcomm Null Installation Disk"
-qcmbbnull.DeviceDesc      = "Qualcomm Null Device"
-qcmbbnull.SVCDESC         = "Qualcomm Null Service"
+SPSVCINST_ASSOCSERVICE = 0x00000002
+ManufacturerName       = "LumiaWoA authors"
+DiskName               = "Qualcomm Null Installation Disk"
+qcmbbnull.DeviceDesc   = "Qualcomm Null Device"
+qcmbbnull.SVCDESC      = "Qualcomm Null Service"
 
-QcMbb2Null.DeviceDesc     = "Qualcomm Mobile Broadband Device (Null)"
+QcMbb2Null.DeviceDesc  = "Qualcomm Mobile Broadband Device (Null)"
+

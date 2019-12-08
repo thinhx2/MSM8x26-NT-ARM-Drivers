@@ -35,6 +35,7 @@ msvcp140.dll
 vcruntime140.dll
 
 [Strings]
-IHV                    = "LumiaWoA authors"
-DiskId1                = "Microsoft Visual C++ 140 Installation Disk #1"
+IHV     = "LumiaWoA authors"
+DiskId1 = "Microsoft Visual C++ 140 Installation Disk #1"
+
 
